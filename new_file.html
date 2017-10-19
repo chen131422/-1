@@ -3,7 +3,282 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<script type="text/javascript" src="../../jsbao/swiper.min.js" ></script>
+	<link rel="stylesheet" href="../../jsbao/swiper.min.css" />
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		html,body,#box{
+			height: 100%;
+		}
+		html{
+			font-size: 64%;
+		}
+		img{
+			width: 100%;
+		}
+		#box{
+			position: relative;
+		}
+		header{
+			position: absolute;
+			height: 60px;
+			width: 100%;									
+			z-index: 2;
+			font-size: 1.5rem;
+			text-align: center;
+			
+		}
+		header>img{
+			position: absolute;
+			width: 35px;
+			height: 35px;
+			margin-top: 32px;
+			margin-left: 10px;
+		}
+		input{
+			font-size: 1.5rem;
+			text-align: center;
+			width: 47%;
+			height: 40px;
+			line-height: 40px;
+			margin-top: 30px;
+			border: 0;
+			border-radius: 20px;
+			z-index: 5;
+			background: #FFFFFF;
+			color: #000000;
+			outline: none;
+			border-bottom: #FFFFFF 1px solid;
+		}
+		#sw{
+			height: 25%;
+			width: 100%;
+		}
+		#sw .swiper-slide{
+			height: 100%;
+			width: 100%;
+		}
+		#sw .swiper-slide>img{
+			height:100%
+		}
+		.nav{
+			height: 22%;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.nav li{
+			height: 50%;
+			width: 18%;
+			text-align: center;
+		}
+		.nav li>img{
+			width: 61%;
+			margin: 10%;
+		}
+		h2{
+			height: 6%;
+			width: 100%;
+			text-align: center;
+			letter-spacing: 5px;
+			line-height: 50px;
+			font: "微软雅黑";
+			font-size: 1.6rem;
+		}
+		.cp{
+			height: 22%;
+			width: 100%;
+			
+		}
+		.cl{
+			height: 45%;
+			margin-bottom: 3%;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+		#cl{
+			margin-bottom: 3%;
+		}
+		.cl li{
+			height: 100%;
+			
+		}
+		.cll{
+			width: 24%;
+		}
+		.cll>img{
+			height: 100%;
+		}
+		.clll{
+			width: 64%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.clll>h2{
+			height: 40%;
+			width: 100%;
+			text-align: left;
+			line-height: 30px;
+		}
+		.clll>p{
+			height: 60%;
+			font-size: 1rem;
+		}
+		.tu{
+			height: 9%;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			overflow: hidden;
+		}
+		.tu li{
+			width: 30%;
+			height: 100%;
+		}
+		.fToor{
+			height: 8%;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
+		.fToor li{
+			height: 100%;
+			width: 16%;
+			text-align: center;
+		}
+		.fToor li>img{
+			width: 60%;
+			margin: 0 20%;
+		}
+	</style>
 	</head>
 	<body>
+		<header>
+			<img src="images/index_03.png" />
+			<input type="text" placeholder="喜欢不喜欢的人"/>
+		</header>
+		<div id="box">
+			<div id="sw" class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/barent.png" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/barent.png" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/barent.png" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<ul class="nav">
+			<li>
+				<img src="images/index_07.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_09.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_11.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_13.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_15.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_22.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_23.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_41.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_15.png" />
+				美食
+			</li>
+			<li>
+				<img src="images/index_11.png" />
+				美食
+			</li>
+		</ul>
+		<h2>-热门菜谱   BOES-</h2>
+		<div class="cp">
+			<ul class="cl"id="cl">
+				<li class="cll">
+					<img src="images/index_27.png" />
+				</li>
+				<li class="clll">
+					<h2>红烧排骨</h2>
+					<p>红烧排骨时候一到非常好吃没事的话可以尝尝，强烈推荐，尤其是聚餐的时候非常棒</p>
+				</li>
+			</ul>
+			<ul class="cl">
+				<li class="cll">
+					<img src="images/index_30.png" />
+				</li>
+				<li class="clll">
+					<h2>糖醋里脊</h2>
+					<p>糖醋里脊时候一到非常好吃没事的话可以尝尝，强烈推荐，尤其是聚餐的时候非常棒</p>
+				</li>
+			</ul>
+			
+		</div>
+		<h2>-w为你优选   BEST-</h2>
+		<ul class="tu">
+			<li><img src="images/index_32.png"></li>
+			<li><img src="images/index_34.png"></li>
+			<li><img src="images/index_36.png"></li>
+		</ul>
+		<ul class="fToor">
+				<li>
+					<img src="images/index_03.png" />
+					首页
+				</li>
+				<li>
+					<img src="images/footer_05.png" />
+					首页
+				</li>
+				<li>
+					<img src="images/footer_07.png" />
+					首页
+				</li>
+				<li>
+					<img src="images/footer_09.png" />
+					首页
+				</li>
+				<li>
+					<img src="images/footer_11.png" />
+					首页
+				</li>
+			</ul>
+		</div>
 	</body>
+	<script>
+		var sw = new Swiper("#sw",{
+			autoplay:1000,
+			loop:true,
+			pagination:".swiper-pagination"
+		})
+	</script>
 </html>
